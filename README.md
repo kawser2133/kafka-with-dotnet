@@ -1,11 +1,6 @@
-Here's a detailed `README.md` file for your project:  
-
-```markdown
 # Kafka with .NET: Real-Time Notification System  
 
 A beginner-friendly project demonstrating how to integrate Apache Kafka with .NET applications. This repository provides a simple real-time notification system with producer and consumer implementations, using Docker to set up the Kafka environment.  
-
----
 
 ## Features  
 - Apache Kafka setup using Docker.  
@@ -13,20 +8,16 @@ A beginner-friendly project demonstrating how to integrate Apache Kafka with .NE
 - Real-time notification system with JSON-based messages.  
 - Beginner-friendly code and detailed explanations.  
 
----
-
 ## Prerequisites  
 - .NET Core SDK (version 6.0 or later).  
 - Docker and Docker Compose installed.  
-
----
 
 ## Getting Started  
 
 ### 1. Clone the Repository  
 ```bash
-git clone https://github.com/yourusername/kafka-dotnet-tutorial.git
-cd kafka-dotnet-tutorial
+git clone https://github.com/kawser2133/kafka-with-dotnet.git
+cd kafka-with-dotnet
 ```  
 
 ### 2. Set Up Kafka with Docker  
@@ -63,9 +54,9 @@ docker-compose up -d
 ### 4. Consumer Application  
 
 #### Run the Consumer  
-1. Navigate to the `ConsumerApp` folder:  
+1. Navigate to the `NotificationConsumer` folder:  
    ```bash
-   cd ConsumerApp
+   cd NotificationConsumer
    ```  
 2. Run the application:  
    ```bash
@@ -74,21 +65,18 @@ docker-compose up -d
 
 The consumer will listen to the Kafka topic (`notifications`) and display incoming messages in the console.  
 
----
 
 ## Project Structure  
 - **`NotificationAPI`**: Kafka producer application for sending messages.  
-- **`ConsumerApp`**: Kafka consumer application for processing messages.  
+- **`NotificationConsumer`**: Kafka consumer application for processing messages.  
 - **`docker-compose.yml`**: Docker setup for Kafka and Zookeeper.  
 
----
 
 ## How It Works  
 1. **Producer**: Sends notifications to the Kafka topic `notifications`.  
 2. **Kafka**: Acts as a message broker to store and forward messages.  
 3. **Consumer**: Listens to the topic and processes notifications in real-time.  
 
----
 
 ## Example Output  
 
@@ -106,15 +94,14 @@ Time: 2025-01-25T12:34:56Z
 -------------------
 ```  
 
----
+## Authors
 
-## Contributions  
-Feel free to open issues or submit pull requests if you find bugs or want to contribute.  
+If you have any questions or need further assistance, please contact the project author at [@kawser2133](https://www.github.com/kawser2133) || [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kawser2133) 
 
----
+## Contributing
 
-## License  
-This project is licensed under the MIT License. See the `LICENSE` file for details.  
-```  
+I want you to know that contributions to this project are welcome. Please open an issue or submit a pull request if you have any ideas, bug fixes, or improvements.
 
-You can customize the content as needed. Let me know if you'd like additional sections or edits!
+## License
+
+This project is licensed under the [MIT License](LICENSE).
